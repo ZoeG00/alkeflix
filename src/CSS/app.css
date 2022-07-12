@@ -1,0 +1,21 @@
+.favourite-btn {
+    width:30px;
+    height:30px;
+    background-color: #212529;
+    border-radius:30px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    position: absolute;
+    right: 10px;
+    top: 13px;
+    border: none;
+}
+.favourite-btn:active {
+    transform:scale(1.2);
+    transition-duration: 0.5s;
+}
+.corazon-img {
+    width: 15px;
+    height: 15px;
+}
