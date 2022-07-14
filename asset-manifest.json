@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/alkeflix/static/css/main.a7623a99.css",
-    "main.js": "/alkeflix/static/js/main.d3961c5b.js",
+    "main.js": "/alkeflix/static/js/main.ddaa30ad.js",
     "index.html": "/alkeflix/index.html",
     "main.a7623a99.css.map": "/alkeflix/static/css/main.a7623a99.css.map",
-    "main.d3961c5b.js.map": "/alkeflix/static/js/main.d3961c5b.js.map"
+    "main.ddaa30ad.js.map": "/alkeflix/static/js/main.ddaa30ad.js.map"
   },
   "entrypoints": [
     "static/css/main.a7623a99.css",
-    "static/js/main.d3961c5b.js"
+    "static/js/main.ddaa30ad.js"
   ]
 }
