@@ -70,11 +70,11 @@ function App() {
       <div className='container mt-3'>
         <BrowserRouter>
           <Routes>
-            <Route  exact path= "/" element = {<Login/>} />
-            <Route  exact path= "/home" element = {<Listado addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
+            <Route exact path= "/" element = {<Login/>} />
+            <Route path= "/home" element = {<Listado addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
             <Route path= "/detalle" element = {<Detalle />} />
             <Route path= "/resultados" element = {<Resultados addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
-            <Route  exact path= "/favoritos" element = {<Favoritos Favorites={Favorites} addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
+            <Route path= "/favoritos" element = {<Favoritos Favorites={Favorites} addOrRemoveFromFavs={addOrRemoveFromFavs}/>} />
           </Routes>
         </BrowserRouter>
       </div>
