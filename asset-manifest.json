@@ -1,13 +1,13 @@
 {
   "files": {
     "main.css": "/alkemy-challenge/static/css/main.a7623a99.css",
-    "main.js": "/alkemy-challenge/static/js/main.84bc4490.js",
+    "main.js": "/alkemy-challenge/static/js/main.7701e23e.js",
     "index.html": "/alkemy-challenge/index.html",
     "main.a7623a99.css.map": "/alkemy-challenge/static/css/main.a7623a99.css.map",
-    "main.84bc4490.js.map": "/alkemy-challenge/static/js/main.84bc4490.js.map"
+    "main.7701e23e.js.map": "/alkemy-challenge/static/js/main.7701e23e.js.map"
   },
   "entrypoints": [
     "static/css/main.a7623a99.css",
-    "static/js/main.84bc4490.js"
+    "static/js/main.7701e23e.js"
   ]
 }
