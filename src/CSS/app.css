@@ -19,3 +19,9 @@
     width: 15px;
     height: 15px;
 }
+
+#detalle-img {
+display: flex;
+height: 70vh;
+align-self: flex-end;
+}

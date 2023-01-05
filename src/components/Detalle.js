@@ -34,8 +34,8 @@ function Detalle() {
             {movie && 
             <>
                 <div className='row'>
-                    <div className='card my-2 bg-dark'>
-                        <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className="rounded mx-auto d-block mt-4"  alt="imagen"/>
+                    <div className='bg-dark' id='detalle-bg'>
+                        <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className='rounded mx-auto mt-4' id='detalle-img' alt="movie img"/>
                          <div className='col-8 ml-2 text-white'>
                             <h1 className='mt-4'>Título: {movie.title}</h1> 
                             <h2>Resumen </h2>

@@ -2,6 +2,7 @@ import {useNavigate} from 'react-router-dom';
 import Swal from "sweetalert2";
 import withReactContent from 'sweetalert2-react-content';
 import {Navigate} from 'react-router-dom';
+
 function Buscador() {
     const navigate = useNavigate;
     const swAlert = withReactContent(Swal);

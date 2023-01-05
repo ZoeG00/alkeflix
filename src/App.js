@@ -4,7 +4,7 @@ import {useEffect, useState} from 'react';
 
 //components
 import Footer from './components/Footer';
-import Header from './components/Header';
+import NavBar from './components/NavBar';
 import Detalle from './components/Detalle';
 import Resultados from './components/Resultados';
 import Listado from "./components/Listado";
@@ -64,9 +64,10 @@ function App() {
       console.log('la película fue removida') 
   }
 }
+//rutas
   return (
     <>
-      <Header Favorites={Favorites}/>
+      <NavBar Favorites={Favorites}/>
       <div className='container mt-3'>
         <BrowserRouter>
           <Routes>
