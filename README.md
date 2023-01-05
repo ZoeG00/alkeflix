@@ -1,7 +1,9 @@
 # AlkeFlix App
 
 Versión 0.1.0
+
 Para realizar este proyecto se utilizó React + Bootstrap
+
 Consumo de API de películas
 
 ## Link al proyecto
