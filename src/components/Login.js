@@ -3,12 +3,11 @@ import axios from "axios";
 import Swal from 'sweetalert2';
 import withReactContent from 'sweetalert2-react-content';
 
-
 function Login() {
     const swAlert = withReactContent(Swal);
     const navigate = useNavigate();
 
-/*****VALIDACIÓN DE CORREO ELECTRÓNICO */
+//VALIDACIÓN DE CORREO ELECTRÓNICO 
     const submitHandler = e => {
         e.preventDefault();
         const email = e.target.email.value;
