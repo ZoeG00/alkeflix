@@ -1,4 +1,8 @@
-.favourite-btn {
+body {
+    background-color: #212529;    
+
+ /*Sección Favoritos*/
+}.favourite-btn {
     width:30px;
     height:30px;
     background-color: #212529;
@@ -21,7 +25,5 @@
 }
 
 #detalle-img {
-display: flex;
-height: 70vh;
-align-self: flex-end;
+    width: 50vw;
 }

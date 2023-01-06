@@ -5,7 +5,7 @@ function Header(props) {
     return (
         <>
             <header>
-                <nav className="navbar navbar-expand-lg bg-dark">
+                <nav className="navbar navbar-expand-lg bg-black">
                     <div className="container-fluid">
                         <a className="navbar-brand text-white" href="/"><img src='https://fontmeme.com/permalink/220623/447f8a486a1160e2c9266a79cc12badd.png' className="img-fluid col-6 rounded mx-auto d-block" /></a>
                         <button className="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
