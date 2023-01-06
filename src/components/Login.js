@@ -38,29 +38,26 @@ function Login() {
             })
     };
     let token = sessionStorage.getItem('token');
-    
+
     //FORMULARIO DE INGRESO 
     return (
         <>
             {token && <Navigate to='home' />}
-            <form onSubmit={submitHandler}>
-                <img src='https://fontmeme.com/permalink/220623/447f8a486a1160e2c9266a79cc12badd.png' className='img-fluid rounded mx-auto d-block' alt='alkeflix'></img>
-                <h1 class="h4 mb-3 fw-normal text-center">Por favor, inicie sesión</h1>
-                <div class="form-floating">
-                    <input type="email" name='email' class="form-control" id="floatingInput" placeholder="name@example.com" />
+            <form className='position-absolute top-50 start-50 translate-middle' onSubmit={submitHandler}>
+                <img src='https://fontmeme.com/permalink/220623/447f8a486a1160e2c9266a79cc12badd.png' className='img-fluid rounded mx-auto d-block mb-4 mt-4' alt='alkeflix'></img>
+                <div className="form-floating">
+                    <input type="email" name='email' className="form-control" id="floatingInput" placeholder="name@example.com" />
                     <label for="floatingInput">Correo electrónico</label>
                 </div>
-                <div class="form-floating mt-4">
+                <div className="form-floating mt-4">
                     <input type="password" class="form-control" id="floatingPassword" name='password' placeholder="Contraseña" />
                     <label for="floatingPassword">Contraseña</label>
                 </div>
-
-                <div class="checkbox mb-3">
+                <div className="checkbox mb-3 mt-2 text-white">
                     <label>
-                        <input type="checkbox" value="recordarme" /> Recordarme
-                    </label>
+                        <input type="checkbox" value="recordarme" /> Recordarme</label>
                 </div>
-                <button class="w-100 btn btn-lg btn-success" type="submit">Ingresar</button>
+                <button className="w-100 btn btn-lg btn-danger" type="submit">Ingresar</button>
             </form>
         </>
     )
