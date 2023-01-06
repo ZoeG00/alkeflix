@@ -43,21 +43,23 @@ function Login() {
     return (
         <>
             {token && <Navigate to='home' />}
-            <form className='position-absolute top-50 start-50 translate-middle' onSubmit={submitHandler}>
-                <img src='https://fontmeme.com/permalink/220623/447f8a486a1160e2c9266a79cc12badd.png' className='img-fluid rounded mx-auto d-block mb-4 mt-4' alt='alkeflix'></img>
-                <div className="form-floating">
-                    <input type="email" name='email' className="form-control" id="floatingInput" placeholder="name@example.com" />
-                    <label for="floatingInput">Correo electrónico</label>
+            <form className='d-flex justify-content-center' onSubmit={submitHandler}>
+                <div className='row w-50'>
+                    <img src='https://fontmeme.com/permalink/220623/447f8a486a1160e2c9266a79cc12badd.png' className='img-fluid rounded d-block mb-4 mt-4' alt='alkeflix'></img>
+                    <div className="form-floating">
+                        <input type="email" name='email' className="form-control" id="floatingInput" placeholder="name@example.com" />
+                        <label for="floatingInput">Correo electrónico</label>
+                    </div>
+                    <div className="form-floating mt-4">
+                        <input type="password" class="form-control" id="floatingPassword" name='password' placeholder="Contraseña" />
+                        <label for="floatingPassword">Contraseña</label>
+                    </div>
+                    <div className="checkbox mb-3 mt-2 text-white">
+                        <label>
+                            <input type="checkbox" value="recordarme" /> Recordarme</label>
+                    </div>
+                    <button className="btn btn-lg btn-danger" type="submit">Ingresar</button>
                 </div>
-                <div className="form-floating mt-4">
-                    <input type="password" class="form-control" id="floatingPassword" name='password' placeholder="Contraseña" />
-                    <label for="floatingPassword">Contraseña</label>
-                </div>
-                <div className="checkbox mb-3 mt-2 text-white">
-                    <label>
-                        <input type="checkbox" value="recordarme" /> Recordarme</label>
-                </div>
-                <button className="w-100 btn btn-lg btn-danger" type="submit">Ingresar</button>
             </form>
         </>
     )

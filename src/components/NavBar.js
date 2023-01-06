@@ -1,7 +1,7 @@
 //components
 import Buscador from "./Buscador";
 
-function Header(props) {
+function NavBar(props) {
     return (
         <>
             <header>
@@ -35,4 +35,4 @@ function Header(props) {
     )
 }
 
-export default Header;
+export default NavBar;
