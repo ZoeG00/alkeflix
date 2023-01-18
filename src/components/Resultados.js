@@ -11,7 +11,7 @@ function Resultados(props) {
 
     const [moviesResults, setMoviesResults] = useState([]);
     useEffect(() => {
-        const endPoint= 'https://api.themoviedb.org/3/discover/movie?api_key=63c89334f7f95d6c58412e7d5dbc805f&language=es-ES&query=${keyword}';
+        const endPoint= `https://api.themoviedb.org/3/discover/movie?api_key=63c89334f7f95d6c58412e7d5dbc805f&language=es-ES&query=${keyword}`
         axios 
         .get(endPoint)
         .then(response => {
@@ -22,7 +22,7 @@ function Resultados(props) {
             console.log(error)
             swAlert.fire('Lo siento, sucedió un error intente más tarde')
         })
-    }, [keyword]);
+    }, [keyword, swAlert]);
 console.log(moviesResults)
 return (
     <>  
