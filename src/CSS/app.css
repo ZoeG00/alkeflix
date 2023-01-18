@@ -27,3 +27,9 @@ body {
 #detalle-img {
     width: 50vw;
 }
+
+#movie-title {
+    display:flex;
+    justify-content: center;
+    color: white;
+}

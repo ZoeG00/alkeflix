@@ -26,7 +26,7 @@ function Detalle() {
                 console.log(error)
                 swAlert.fire('Hubo un error, intente más tarde');
             })
-    }, [movieID]);
+    }, [movieID, swAlert]);
 
     return (
         <>
@@ -38,7 +38,7 @@ function Detalle() {
                             <h1 className='mt-4 text-white'>{movie.title}</h1>
                         </div>
                         <div>
-                            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className='rounded mx-auto mt-4 d-flex' id='detalle-img' alt="movie img" />
+                            <img src={`https://image.tmdb.org/t/p/w500/${movie.poster_path}`} className='rounded mx-auto mt-4 d-flex mb-4' id='detalle-img' alt="movie img" />
                         </div>
                         <div className='text-white col-sm-8'>
                             <h3>Resumen </h3>

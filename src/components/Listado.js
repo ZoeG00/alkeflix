@@ -1,3 +1,4 @@
+/* eslint-disable jsx-a11y/aria-role */
 import {Link} from 'react-router-dom';
 import {Navigate} from 'react-router-dom';
 import {useEffect, useState} from 'react';
@@ -21,7 +22,7 @@ function Listado(props) {
             console.log(error)
             swAlert.fire('Lo siento, sucedió un error intente más tarde')
         })
-    }, [setMoviesList]);
+    }, [setMoviesList, swAlert]);
 
     return (
         <>  
@@ -34,10 +35,10 @@ function Listado(props) {
                             <div className="card my-4">
                                 <img src={`https://image.tmdb.org/t/p/w500/${oneMovie.poster_path}`} className="card-img-top"  alt="imagenes"/>
                                 <button onClick={props.addOrRemoveFromFavs} className='favourite-btn'>❤</button>
-                                <div className="card-body">
-                                    <h5 className="Movie Title">{oneMovie.title.substring(0, 18)}...</h5>
-                                    <p className="Movie Overview">{oneMovie.overview.substring(0, 50)}...</p>
-                                    <Link to={`/detalle?movieID=${oneMovie.id}`} className="btn btn-danger d-grid gap-2 d-md-flex justify-content-md-center">Ver detalles</Link>
+                                <div className="card-body bg-dark">
+                                    <h5 id='movie-title'>{oneMovie.title}</h5>
+                                    <p className="text-secondary">{oneMovie.overview.substring(0, 50)}...</p>
+                                    <Link to={`/detalle?movieID=${oneMovie.id}`} className="btn btn-danger d-grid gap-2 d-md-flex justify-content-md-center">Ver más</Link>
                                 </div>
                             </div>
                         </div>
